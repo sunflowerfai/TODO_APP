@@ -1,0 +1,12 @@
+<%= turbo_frame_tag todo do %>
+    <div class="todo">
+      <%= check_box_tag "todo_completed", "1", todo.completed, data: { 
+        turbo_method: :patch,
+        turbo_frame: "_top",
+        url: toggle_category_todo_path(todo.category, todo)
+      } %>
+      <%= todo.title %>
+      <%= link_to "Edit", edit_category_todo_path(todo.category, todo) %>
+      <%= button_to "Delete", category_todo_path(todo.category, todo), method: :delete %>
+    </div>
+  <% end %>

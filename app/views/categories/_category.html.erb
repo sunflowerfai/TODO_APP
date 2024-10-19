@@ -1,0 +1,8 @@
+<%= turbo_frame_tag dom_id(category) do %>
+    <div class="category-item">
+      <%= link_to category.name, category_path(category) %>
+      <%= button_to "Delete", category_path(category), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+      <%= link_to "Edit", edit_category_path(category) %>
+      <%= link_to "+", new_category_todo_path(category) %>
+    </div>
+  <% end %>

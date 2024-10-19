@@ -1,0 +1,13 @@
+#rooms {
+  float: left;
+  width: 30%;
+}
+
+#messages {
+  float: right;
+  width: 70%;
+}
+
+.message {
+  margin-bottom: 10px;
+}

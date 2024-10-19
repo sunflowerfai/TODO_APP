@@ -1,0 +1,4 @@
+<%= form_with(model: room, id: "#{dom_id(room)}_form") do |form| %>
+  <%= form.text_field :name, placeholder: "Room name" %>
+  <%= form.submit %>
+<% end %>

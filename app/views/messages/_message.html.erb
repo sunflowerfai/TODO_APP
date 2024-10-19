@@ -1,0 +1,6 @@
+<%= turbo_frame_tag message do %>
+  <div class="message">
+    <p><%= message.content %></p>
+    <%= button_to "Delete", [@room, message], method: :delete, data: { turbo_frame: "_top" } %>
+  </div>
+<% end %>

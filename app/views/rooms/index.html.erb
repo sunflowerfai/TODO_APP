@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007AFF;
+            margin-top: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .show-link {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        .todo-item {
+            margin-bottom: 15px;
+        }
+        .todo-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .tag {
+            color: #007AFF;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tags</h1>
+            <a href="#" class="show-link">Show</a>
+        </div>
+        <p>Show reminders with tags.</p>
+        <p>0 Completed</p>
+        <div class="todo-list">
+            <div class="todo-item">
+                <input type="checkbox" id="todo1">
+                <label for="todo1">Todo 1 การเรียน <span
+class="tag">#ODDS</span></label>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="todo3">
+                <label for="todo3">Todo 3 การเรียน <span class="tag">#BU</span></label>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="todo4">
+                <label for="todo4">Todo 4 การเรียน <span class="tag">#BU</span></label>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox" id="todo5">
+                <label for="todo5">Todo 5 การเรียน <span class="tag">#ODDS</span></label>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Ref. Reminder in macOS/iOS
+    </div>
+</body>
+</html>
